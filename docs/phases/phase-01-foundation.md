@@ -65,3 +65,34 @@ The server had working internet access through NAT and a separate isolated netwo
 * PowerShell network configuration
 * Connectivity troubleshooting
 
+## Evidence
+
+### External network setup
+
+![DC01 Adapter 1 using NAT](../../screenshots/phase-01/Nat%20in%20DC01.png)
+
+*DC01 was connected to NAT to provide temporary internet access.*
+
+### Initial connectivity validation
+
+![Initial connectivity tests](../../screenshots/phase-01/Screenshot%202026-09-13%20215021.png)
+
+*The gateway, internet, and DNS tests succeeded over the NAT connection.*
+
+### Internal lab network setup
+
+![DC01 internal network](../../screenshots/phase-01/Internal%20network.png)
+
+*DC01 was connected to the isolated VERMACORP-LAB internal network.*
+
+### Static IP configuration
+
+![DC01 IP configuration](../../screenshots/phase-01/setting%20ip%20address.png)
+
+*The internal adapter was configured with the static address 192.168.50.10/24.*
+
+## Evidence Notes
+
+The evidence is presented in the order the environment was built: external connectivity, internal network creation, and static IP configuration. Additional screenshots are retained separately but are not embedded because they show duplicate or intermediate troubleshooting states.
+
+
