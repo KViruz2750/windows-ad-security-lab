@@ -83,3 +83,61 @@ gpupdate /force
 * Active Directory depends on accurate time synchronization.
 * Group Policy errors may display generic connectivity messages even when the underlying cause is Kerberos time skew.
 * Troubleshooting should progress from network connectivity to DNS, service availability, authentication, and event logs.
+
+
+## Evidence
+
+### DNS server records
+
+![DNS Manager](../../screenshots/phase-02/DNS%20Manager.png)
+
+*DNS Manager shows the `vermacorp.local` forward lookup zone and DC01 host records.*
+
+### Basic network and DNS validation
+
+![Basic DNS and network validation](../../screenshots/phase-01/Screenshot%202026-09-13%20215021.png)
+
+*DC01 successfully reached the gateway and Internet and resolved an external DNS name.*
+
+### Client-to-domain-controller DNS validation
+
+![Client-to-domain-controller connectivity](../../screenshots/phase-03/client-to-domain-controller%20connectivity.png)
+
+*CLIENT01 successfully reached DC01, resolved `dc01.vermacorp.local`, and located the domain controller.*
+
+### Active Directory service status
+
+![Active Directory services](../../screenshots/phase-02/AD%20services%20running%20phase%202.png)
+
+*The DNS, Netlogon, NTDS, and DFSR services were shown as running on DC01.*
+
+### SYSVOL and NETLOGON validation
+
+![SYSVOL and NETLOGON validation](../../screenshots/phase-02/SYSVOL%20and%20NETLOGON%20validation.png)
+
+*The SYSVOL and NETLOGON shares were available, and SYSVOL path validation succeeded.*
+
+### Successful Group Policy update
+
+![Successful policy update](../../screenshots/phase-04/successful%20policy%20update.png)
+
+*The `gpupdate /force` command completed successfully for both computer and user policy.*
+
+### Applied Group Policy verification
+
+![Applied policy verification](../../screenshots/phase-04/applied%20policy%20verification.png)
+
+*The `gpresult /r` output confirms that the expected Group Policy Objects were applied to CLIENT01.*
+
+### Time synchronization validation
+
+![Time synchronization validation](../../screenshots/troubleshoots/get-date.png)
+
+*The DC01 and CLIENT01 timestamps are closely aligned. CLIENT01 reports `DC01.vermacorp.local` as its time source and references the domain controller at `192.168.50.10`.*
+
+## Evidence Notes
+
+These screenshots document DNS resolution, domain-controller connectivity, Active Directory service availability, SYSVOL and NETLOGON access, Group Policy processing, and time synchronization.
+
+DC01 reports `Local CMOS Clock` as its time source, while CLIENT01 synchronizes from DC01. This is acceptable for the isolated lab unless an external NTP source is later configured.
+
