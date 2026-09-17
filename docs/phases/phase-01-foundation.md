@@ -75,7 +75,7 @@ The server had working internet access through NAT and a separate isolated netwo
 
 ### Initial connectivity validation
 
-![Initial connectivity tests](../../screenshots/phase-01/Screenshot%202026-09-13%20215021.png)
+![Initial connectivity tests](../../screenshots/phase-01/testing%20connectivity.png)
 
 *The gateway, internet, and DNS tests succeeded over the NAT connection.*
 
