@@ -101,7 +101,7 @@ gpupdate /force
 
 ### Client-to-domain-controller DNS validation
 
-![Client-to-domain-controller connectivity](../../screenshots/phase-03/client-to-domain-controller%20connectivity.png)
+![Client-to-domain-controller connectivity](../../screenshots/phase-3/client-to-domain-controller%20connectivity.png)
 
 *CLIENT01 successfully reached DC01, resolved `dc01.vermacorp.local`, and located the domain controller.*
 
