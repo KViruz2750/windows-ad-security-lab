@@ -102,7 +102,7 @@ Because `DC01` has both NAT and internal interfaces, DNS registration required a
 
 ### DNS name resolution
 
-![DC01 DNS lookup](../../screenshots/phase-02/correct%20ip%20address%281%29.png)
+![DC01 DNS lookup](../../screenshots/phase-02/correct%20ip%20address.png)
 
 *The DNS server at 192.168.50.10 successfully resolves `dc01.vermacorp.local` to 192.168.50.10. The additional addresses shown reflect DC01’s multi-homed configuration.*
 
