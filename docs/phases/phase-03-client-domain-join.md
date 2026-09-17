@@ -75,3 +75,37 @@ The standard account was used to test ordinary access, while the administrative 
 * Active Directory organizational units
 * Virtual machine networking
 
+
+## Evidence
+
+### Client virtual machine network configuration
+
+![CLIENT01 internal network configuration](../../screenshots/phase-03/phase%203%20client%2001%20configuration.png)
+
+*CLIENT01 Adapter 2 is enabled and attached to the isolated `VERMACORP-LAB` internal network.*
+
+### Domain computer object and OU placement
+
+![CLIENT01 computer object in Active Directory](../../screenshots/phase-03/phase%203%20Active%20Directory%20structure%20and%20accounts.png)
+
+*Active Directory Users and Computers shows the CLIENT01 computer object inside the `Lab-Workstations` organizational unit.*
+
+### Client-to-domain-controller validation
+
+![CLIENT01 domain controller connectivity](../../screenshots/phase-03/phase%203%20client-to-domain-controller%20connectivity.png)
+
+*CLIENT01 successfully reached DC01, resolved `dc01.vermacorp.local`, and located the domain controller with `nltest /dsgetdc:vermacorp.local`.*
+
+### LDAP connectivity validation
+
+![CLIENT01 LDAP connectivity](../../screenshots/phase-03/phase%203%20LDAP%20connectivity.png)
+
+*CLIENT01 successfully connected to DC01 on TCP port 389 from source address `192.168.50.20`.*
+
+## Evidence Notes
+
+These screenshots document CLIENT01’s connection to the isolated lab network, its domain computer object and OU placement, successful communication with DC01, and LDAP connectivity.
+
+The Active Directory screenshot shows the CLIENT01 computer object—not user accounts—so it is labeled accordingly. The `nltest` validation provides the conclusive proof that CLIENT01 can locate the `vermacorp.local` domain controller.
+
+
