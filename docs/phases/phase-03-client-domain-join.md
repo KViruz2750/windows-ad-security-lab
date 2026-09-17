@@ -80,7 +80,7 @@ The standard account was used to test ordinary access, while the administrative 
 
 ### Client virtual machine network configuration
 
-![CLIENT01 internal network configuration](../../screenshots/phase-03/phase%203%20client%2001%20configuration.png)
+![phase 3 client 01 configuration](../../screenshots/phase-03/phase%203%20client%2001%20configuration.png)
 
 *CLIENT01 Adapter 2 is enabled and attached to the isolated `VERMACORP-LAB` internal network.*
 
