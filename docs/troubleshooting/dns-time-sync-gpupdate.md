@@ -95,13 +95,13 @@ gpupdate /force
 
 ### Basic network and DNS validation
 
-![Basic DNS and network validation](../../screenshots/phase-01/Screenshot%202026-09-13%20215021.png)
+![Basic DNS and network validation](../../screenshots/phase-01/testing%20connectivity.png)
 
 *DC01 successfully reached the gateway and Internet and resolved an external DNS name.*
 
 ### Client-to-domain-controller DNS validation
 
-![Client-to-domain-controller connectivity](../../screenshots/phase-3/client-to-domain-controller%20connectivity.png)
+![Client-to-domain-controller connectivity](../../screenshots/phase%203/client-to-domain-controller%20connectivity.png)
 
 *CLIENT01 successfully reached DC01, resolved `dc01.vermacorp.local`, and located the domain controller.*
 
