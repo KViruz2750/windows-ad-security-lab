@@ -8,7 +8,7 @@
 
 A Windows Security Event ID 4688 was generated on CLIENT01 after an administrator launched a controlled PowerShell command. The event was investigated to determine which account created the process, what executable was launched, how it was started, whether it was elevated, and what command it executed.
 
-The activity was confirmed as an authorized test used to validate the advanced process-auditing controls configured during [Phase 5 — Advanced Process Creation Auditing](../phases/phase-05-advanced-process-auditing.md).
+The activity was confirmed as an authorized test used to validate the advanced process-auditing controls configured during [Phase 5 — Advanced Process Creation Auditing](../phases/phase-05-advanced-auditing.md).
 
 ## Investigation details
 
