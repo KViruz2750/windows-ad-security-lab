@@ -156,6 +156,18 @@ Future SIEM detections should examine Event ID 4688 records for:
 
 *The event records the complete PowerShell command line, including the distinctive Phase 5 test marker.*
 
+## Related Investigation
+
+The controlled PowerShell process was analyzed in [Investigation 002 — PowerShell Process Creation](../investigations/002-process-creation-4688.md).
+
+The investigation documents the creator account, parent-child process relationship, elevation level, complete command line, security relevance, and final benign disposition.
+
+## Outcome
+
+Advanced process-creation auditing is active on CLIENT01. The workstation records successful Event ID 4688 events with account, process, parent-process, elevation, and command-line information.
+
+The controlled test confirmed that the configured Group Policy settings are applied and functioning correctly. This telemetry can support future endpoint investigations, SIEM searches, and process-based threat detection.
+
 ## Conclusion
 
 The investigation confirmed that the observed PowerShell process was authorized and benign. More importantly, the event demonstrated that CLIENT01 now provides the process, account, parent-process, elevation, and command-line telemetry required for host-based investigation and future SIEM analysis.
