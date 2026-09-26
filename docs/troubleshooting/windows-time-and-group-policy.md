@@ -138,13 +138,13 @@ The resolution confirmed that:
 
 ### DC01 time correction
 
-![DC01 time corrected](../../screenshots/troubleshoots/tiem%20change%20succesful%20on%20dc01.png)
+![DC01 time corrected](../../screenshots/phase-05/tiem%20change%20succesful%20on%20dc01.png)
 
 *DC01’s time configuration was corrected before synchronizing the domain client.*
 
 ### CLIENT01 time synchronization
 
-![CLIENT01 time synchronized](../../screenshots/troubleshoots/time%20succesfull%20on%20c01.png)
+![CLIENT01 time synchronized](../../screenshots/phase-05/time%20succesfull%20on%20c01.png)
 
 *CLIENT01 synchronized with `DC01.vermacorp.local` through the domain hierarchy.*
 
@@ -156,7 +156,7 @@ The resolution confirmed that:
 
 ### Successful Group Policy application
 
-![Successful Group Policy application](../../screenshots/phase-05/successful%20gp%20update.png)
+![Successful Group Policy application](../../screenshots/phase-05/successful%20gp%20update%20.png)
 
 *After restarting CLIENT01 and validating its secure channel, both Computer Policy and User Policy applied successfully.*
 
