@@ -22,6 +22,7 @@ This directory contains the technical documentation, evidence, investigations, a
 ## Troubleshooting
 
 * [DNS, Time Synchronization, and Group Policy](troubleshooting/dns-time-sync-gpupdate.md)
+* [Windows Time Synchronization and Group Policy](troubleshooting/windows-time-and-group-policy.md)
 
 ## Evidence
 
