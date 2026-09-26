@@ -144,7 +144,7 @@ The resolution confirmed that:
 
 ### CLIENT01 time synchronization
 
-![CLIENT01 time synchronized](../../screenshots/troubleshoots/time%20succesful%20on%20c01.png)
+![CLIENT01 time synchronized](../../screenshots/troubleshoots/time%20successful%20on%20c01.png)
 
 *CLIENT01 synchronized with `DC01.vermacorp.local` through the domain hierarchy.*
 
