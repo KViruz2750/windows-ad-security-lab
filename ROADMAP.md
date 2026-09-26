@@ -42,23 +42,23 @@ This roadmap tracks my development of the Windows Active Directory Security Lab.
 * [x] Verify policy application with `gpresult`
 * [x] Investigate Event IDs `4624` and `4625`
 
-## Phase 5: Advanced Auditing — Current
+### Phase 5 — Advanced Process Creation Auditing 
 
-* [ ] Enable process-creation auditing
-* [ ] Investigate Event ID `4688`
-* [ ] Enable account-creation auditing on `DC01`
-* [ ] Investigate Event ID `4720`
-* [ ] Audit privileged-group changes
-* [ ] Investigate Events `4728`, `4729`, and `4732`
+- [x] Enable successful process-creation auditing through Group Policy
+- [x] Include complete command lines in Event ID 4688
+- [x] Apply and verify the policy on CLIENT01
+- [x] Generate a controlled PowerShell test process
+- [x] Validate account, process, parent-process, elevation, and command-line information
+- [x] Document Windows Time and Group Policy troubleshooting
 
-## Phase 6: Permissions and Least Privilege
+### Phase 6 — Least Privilege and Access Control 
 
-* [ ] Configure password complexity
-* [ ] Configure account-lockout policies
-* [ ] Create security groups
-* [ ] Create a controlled file share
-* [ ] Test read and modify permissions
-* [ ] Compare standard-user and administrator access
+- [ ] Design role-based security groups
+- [ ] Configure a protected network share
+- [ ] Apply NTFS and share permissions
+- [ ] Test authorized access
+- [ ] Test denied access
+- [ ] Document effective permissions and security findings
 
 ## Phase 7: Network Analysis
 
