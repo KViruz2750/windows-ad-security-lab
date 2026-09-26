@@ -158,9 +158,9 @@ Process-creation auditing establishes an important endpoint-telemetry source for
 
 ### Successful Group Policy update
 
-![Successful Group Policy update](../../screenshots/phase-05/successful%20gp%20update.png)
+![Successful Group Policy update](../../screenshots/troubleshoots/successful%20gp%20update.png)
 
-*CLIENT01 successfully applied both Computer Policy and User Policy after domain time synchronization was corrected.*
+*After restarting CLIENT01 and validating its secure channel, both Computer Policy and User Policy applied successfully.*
 
 ### Effective auditing settings
 
