@@ -50,6 +50,7 @@ This roadmap tracks my development of the Windows Active Directory Security Lab.
 - [x] Generate a controlled PowerShell test process
 - [x] Validate account, process, parent-process, elevation, and command-line information
 - [x] Document Windows Time and Group Policy troubleshooting
+- [x] Complete and document an Event ID 4688 process-creation investigation
 
 ### Phase 6 — Least Privilege and Access Control 
 
